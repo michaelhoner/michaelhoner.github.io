@@ -1,0 +1,211 @@
+html, body {
+    height: 100%;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    color: #818181;    
+    /*color: #f5f5f5;*/
+  }
+  
+  .hero-section {
+    background: url(../img/foto3.jpg) no-repeat center;
+    /*background: url('https://upload.wikimedia.org/wikipedia/commons/c/c5/Moraine_Lake_17092005.jpg') no-repeat center;*/
+    background-size: cover;
+    background-color: rgba(0,0,0,0.50);
+    background-blend-mode: multiply;
+    height: 100%;
+    width: 100%;
+  }
+
+  /*Navbar*/
+  .brand-firstname {
+    display: inline-block;
+    font-weight: 900;
+    font-size: 1.8rem;
+  }
+  .brand-lastname {
+    display: inline-block;
+    color: #4FC3F7;
+    font-weight: 100;
+    font-size: 1.8rem;
+  }
+
+  /*Navbar scroll*/
+  .solid {
+    background-color: rgb(34, 33, 33);
+    transition: background-color 1s ease 0s;
+    box-shadow: 0 0 4px grey;
+  }
+
+  /* Background Colors */
+
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+
+  /* Containers */
+
+  .container-fluid {
+    padding: 60px 50px;
+}
+
+  /* Fonts */
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+h4 {
+  font-size: 19px;
+  line-height: 1.375em;
+  color: #303030;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+  /* Images */
+
+  .pasfoto {
+    border-radius: 50%;
+    line-height: 1;
+  }
+
+  .logo-small {
+    color: #4FC3F7;
+    font-size: 50px;
+}
+
+  /* Slide Animation */
+
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  
+  /*Text Animation*/
+  .inner-text {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;    
+    /*@media only screen and (min-width: 320px) {
+      padding-left: 15px;
+      padding-right: 15px; 
+    }
+    @media only screen and (min-width: 400px) {
+      padding-left: 40px;
+      padding-right: 40px; 
+    }
+    @media only screen and (min-width: 680px) {
+      font-size: 75px;
+    }
+    @media only screen and (min-width: 950px) {
+      font-size: 100px;
+    }*/
+  }
+  /*@media (min-width: 320px) {
+    .inner-text {
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+  }
+  @media (min-width: 400px) {
+    .inner-text {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }*/
+  @media (min-width: 576px) {
+    .inner-text {
+    font-size: 75px;
+    }
+  }
+  @media (min-width: 992px) {
+    .inner-text {
+    font-size: 100px;
+    }
+  }
+  
+  .typed-animation-1 {
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 900;
+    margin: 0;
+    line-height: 1;
+    color: #f5f5f5;
+    /*@media only screen and (max-width: 465px) {
+      display: block;
+      position: absolute;
+      top: -25%;
+      left: 50%;
+      transform: translateX(-50%);
+    }*/
+  }
+  /*Extra small devices (portrait phones, less than 576px)*/
+  @media (max-width: 575.98px) {
+    .typed-animation-1 {
+    display: block;
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 0;
+    }
+  }
+  
+  .typed-animation-2 {
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 100;
+    margin: 0;
+    line-height: 1;
+    color: #4FC3F7;
+    /*@media only screen and (max-width: 465px) {
+      position: relative;
+      top: 0.6em;
+    }*/
+  }
+  /*Extra small devices (portrait phones, less than 576px)*/
+  @media (max-width: 575.98px) {
+    .p2, .p4 {
+    position: relative;
+    top: 0.6em;
+    }
+  }
