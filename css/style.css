@@ -89,7 +89,7 @@ p {
 
   /* Slide Animation */
 
-  .slideanim {visibility:hidden;}
+  /*.slideanim {visibility:hidden;}
   .slide {
       animation-name: slide;
       -webkit-animation-name: slide;
@@ -116,7 +116,7 @@ p {
       opacity: 1;
       -webkit-transform: translateY(0%);
     }
-  }
+  }*/
   
   /*Text Animation*/
   .inner-text {
@@ -201,11 +201,4 @@ p {
       position: relative;
       top: 0.6em;
     }*/
-  }
-  /*Extra small devices (portrait phones, less than 576px)*/
-  @media (max-width: 575.98px) {
-    .p2, .p4 {
-    position: relative;
-    top: 0.6em;
-    }
   }
