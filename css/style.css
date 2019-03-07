@@ -7,16 +7,32 @@ html, body {
     color: #818181;    
     /*color: #f5f5f5;*/
   }
+
+  .hero-section:before {  
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    mix-blend-mode: multiply;
+  }
   
   .hero-section {
     background: url(../img/foto3.jpg) no-repeat center;
-    /*background: url('https://upload.wikimedia.org/wikipedia/commons/c/c5/Moraine_Lake_17092005.jpg') no-repeat center;*/
-    background-size: cover;
-    background-color: rgba(0,0,0,0.50);
-    background-blend-mode: multiply;
-    height: 100%;
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
+    z-index: -1;
     width: 100%;
-  }
+    height: 100%;
+    background-size: cover;
+    /*background-position: center top;*/
+    mix-blend-mode: multiply;
+  }  
 
   /*Navbar*/
   .brand-firstname {
