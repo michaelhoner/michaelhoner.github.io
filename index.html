@@ -20,64 +20,61 @@
   <link rel="stylesheet" href="css/style.css">
 
   <title>Michael Honer</title>
-
+  <!-- ScrollReveal -->
   <script src="https://unpkg.com/scrollreveal"></script>
-  <script>
-    ScrollReveal({ reset: true });
-  </script>
-
+  <script>ScrollReveal({ reset: true });</script>
 </head>
 
-<body>
-  <!-- Hero Section -->
-  <div class="hero-section">
-    <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-md navbar-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#"><span>
-            <span class="brand-firstname">Michael</span>
-            <span class="brand-lastname">Honer</span>
-          </span></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#about-section">Over</a>
-            <a class="nav-item nav-link" href="#skills-section">Skills</a>
-            <a class="nav-item nav-link" href="#portfolio-section">Portfolio</a>
-            <a class="nav-item nav-link" href="#contact">Contact</a>
-          </div>
+<body data-spy="scroll" data-target="#navbar-scrollspy">
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-md navbar-dark" id="navbar-scrollspy">
+    <div class="container">
+      <a class="navbar-brand" href="#"><span>
+          <span class="brand-firstname">Michael</span>
+          <span class="brand-lastname">Honer</span>
+        </span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#about-section">Over</a>
+          <a class="nav-item nav-link" href="#skills-section">Skills</a>
+          <a class="nav-item nav-link" href="#portfolio-section">Portfolio</a>
+          <a class="nav-item nav-link" href="#contact">Contact</a>
         </div>
       </div>
-    </nav><!-- End of Navbar-->
+    </div>
+  </nav><!-- End Navbar -->
 
+  <!-- Hero Section -->
+  <div class="hero-section">
     <!-- Type Animation -->
     <div class="inner-text">
       <p class="typed-animation-1"></p>
       <p class="typed-animation-2"></p>
-    </div><!-- End of Type Animation -->
-  </div><!-- End of Hero -->
+    </div><!-- End Type Animation -->
+  </div><!-- End Hero -->
 
   <!-- About Section -->
   <div id="about-section" class="container-fluid text-center bg-grey">
     <div class="row">
       <div class="col-sm-4 scrollreveal">
-        <span class="logo slideanim slide"></span>
-        <img class="pasfoto slideanim slide" src="/img/pasfoto.jpg">
+        <span class="logo"></span>
+        <img class="pasfoto" src="/img/pasfoto.jpg">
       </div>
       <div class="col-sm-8">
         <h2>Over Mij</h2><br>
         <h4><strong style="color:#4FC3F7;font-size:25px;">Hallo. </strong> Ik ben Michael en ik ben een Front-End Web
           Developer.</h4>
-        <p class="lead pt-lg-4">Ik vind het leuk om ingewikkelde problemen op te lossen en om gave projecten te ontwikkelen.</p>
+        <p class="lead pt-lg-4">Ik vind het leuk om ingewikkelde problemen op te lossen en om gave projecten te
+          ontwikkelen.</p>
       </div>
     </div>
-
-
-  </div>
+  </div><!-- End About -->
 
   <!-- Skills Section -->
   <div id="skills-section" class="container-fluid text-center">
@@ -88,7 +85,7 @@
         <br>
       </div>
     </div>
-    <div class="row slideanim slide">
+    <div class="row">
       <div class="col-sm-4 scrollreveal">
         <span class="logo-small"><i class="fab fa-html5"></i></span>
         <h4>HTML 5</h4>
@@ -106,7 +103,7 @@
       </div>
     </div>
     <br><br>
-    <div class="row slideanim slide">
+    <div class="row">
       <div class="col-sm-4 scrollreveal">
         <span class="logo-small"><i class="fas fa-code"></i></span>
         <h4>Bootstrap 4</h4>
@@ -123,7 +120,7 @@
         <p>Progressive Web Apps</p>
       </div>
     </div>
-  </div>
+  </div><!-- End Skills -->
 
   <!-- Portfolio Section -->
   <div id="portfolio-section" class="container-fluid text-center bg-grey">
@@ -132,26 +129,26 @@
         <h2>Portfolio.</h2><br>
       </div>
     </div>
-    <div class="row text-center slideanim slide">
+    <div class="row text-center">
       <div class="col-lg-4 col-sm-12 scrollreveal">
-          <h4>Finished project</h4>
-        <div class="thumbnail">
-          <a href="https://michaelhoner.github.io/rooster/"><img src="/img/rooster_poedercoat.png" alt="Rooster Poedercoat" class="img-thumbnail" width="350"
-            height="250"></a>          
+        <h4>Finished Project</h4>
+        <div class="card">
+          <a href="https://michaelhoner.github.io/rooster/"><img src="/img/rooster_poedercoat.png"
+              alt="Rooster Poedercoat" class="img-thumbnail my-md-2" width="300" height="200"></a>
           <p><strong>Rooster Poedercoat</strong></p>
-          <p>Een progressive web app</p>
+          <p class="lead">Progressive web app</p>
         </div>
       </div>
-    <!-- </div><br> -->
-    
-    <!-- <div class="row text-center slideanim slide"> -->
+      <!-- </div><br> -->
+
+      <!-- <div class="row text-center"> -->
       <div class="col-lg-4 col-sm-12 scrollreveal">
-          <h4>Demo project</h4>
-        <div class="thumbnail">
-          <a href="https://michaelhoner.github.io/evelien/"><img src="/img/english_olp.png" alt="English Online Learning Platform" class="img-thumbnail" width="350"
-            height="250"></a>          
+        <h4>Demo Project</h4>
+        <div class="card">
+          <a href="https://michaelhoner.github.io/evelien/"><img src="/img/english_olp.png"
+              alt="English Online Learning Platform" class="img-thumbnail my-md-2" width="300" height="200"></a>
           <p><strong>English Online Learning Platform</strong></p>
-          <p>Online Learning Platform</p>
+          <p class="lead">Online Learning Platform</p>
         </div>
       </div>
     </div><br>
@@ -198,13 +195,13 @@
         </a>
       </div>
     </div>
-  </div>
+  </div><!-- End Carousel -->
 
   <!-- Contact Section -->
   <div id="contact" class="container-fluid text-center bg-grey">
     <h2 class="text-center">CONTACT.</h2>
     <div class="row">
-      <div class="col-12">
+      <div class="col-12 scrollreveal-right">
         <p>Voel je vrij om contact met mij op te nemen.</p>
         <p><i class="fas fa-map-marker-alt fa-lg mr-2"></i> Zwolle, OV</p>
         <p><i class="fas fa-mobile-alt fa-lg mr-2"></i> 06 33 69 77 01</p>
@@ -228,25 +225,21 @@
         </div>
       </div> -->
     </div>
-  </div>
+  </div><!-- End Contact -->
 
   <!-- Footer Section -->
   <footer>
     <div class="text-center py-2">
       <div class="d-inline mr-3"><a href="https://www.linkedin.com/in/michael-honer-74748ab1/"><i
             class="fab fa-linkedin fa-2x"></i></a></div>
-
       <div class="d-inline mr-3"><a href="https://github.com/michaelhoner"><i class="fab fa-github fa-2x"></i></a></div>
-
       <div class="d-inline mr-3"> <a href="https://stackoverflow.com/users/10791050/michael-honer"><i
             class="fab fa-stack-overflow fa-2x"></i></a></div>
-
       <div class="d-inline">
         <h6>©Michael Honer</h6>
       </div>
-
     </div>
-  </footer>
+  </footer><!-- End Footer -->
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -266,7 +259,7 @@
     $(document).ready(function () {
       // Transition effect for navbar 
       $(window).scroll(function () {
-        // checks if window is scrolled more than 500px, adds/removes solid class
+        // checks if window is scrolled more than 100px, adds/removes solid class
         if ($(this).scrollTop() > 100) {
           $('.navbar').addClass('solid');
         } else {
@@ -275,7 +268,8 @@
       });
     });
   </script>
-  <script>ScrollReveal().reveal('.scrollreveal', { distance: '500px' });</script>
+  <script>ScrollReveal().reveal('.scrollreveal', { distance: '300px', delay: 350, duration: 800 });</script>
+  <script>ScrollReveal().reveal('.scrollreveal-right', { distance: '300px', delay: 300, duration: 800, origin: 'right' });</script>
 </body>
 
 </html>

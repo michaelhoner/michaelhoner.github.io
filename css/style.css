@@ -8,6 +8,11 @@ html, body {
     /*color: #f5f5f5;*/
   }
 
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 20px;
+    margin-bottom: .5rem;
+}
+
   .hero-section:before {  
     content: "";
     position: absolute;
@@ -35,6 +40,9 @@ html, body {
   }  
 
   /*Navbar*/
+  .navbar-brand {
+    margin-left: 1rem;
+  }
   .brand-firstname {
     display: inline-block;
     font-weight: 900;
@@ -46,10 +54,37 @@ html, body {
     font-weight: 100;
     font-size: 1.8rem;
   }
+  .navbar-toggler {
+    margin-right: 1rem;
+  }
+  .navbar-collapse {
+    letter-spacing: 5px;
+}
+  .navbar-collapse.show {
+    background-color: rgb(24, 24, 24);
+  }
+
+/* Active Navbar Scroll */
+    .navbar {
+      padding: 0rem 0rem;
+    }
+    .nav-link {
+      display: block;
+      padding: 1rem 1rem;
+      text-align: center;
+      font-family: Montserrat, sans-serif;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+      color: rgba(255,255,255);
+    }
+    .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+      color: #000;
+      background-color: #fff;
+    }
 
   /*Navbar scroll*/
   .solid {
-    background-color: rgb(34, 33, 33);
+    background-color: rgb(24, 24, 24);
     transition: background-color 1s ease 0s;
     box-shadow: 0 0 4px grey;
   }
@@ -64,7 +99,7 @@ html, body {
 
   .container-fluid {
     padding: 60px 50px;
-}
+  }
 
   /* Fonts */
   h2 {
@@ -73,7 +108,7 @@ html, body {
     color: #303030;
     font-weight: 600;
     margin-bottom: 30px;
-}
+  }
 
 h4 {
   font-size: 19px;
