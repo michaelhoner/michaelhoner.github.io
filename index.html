@@ -25,10 +25,10 @@
   <script>ScrollReveal({ reset: true });</script>
 </head>
 
-<body data-spy="scroll" data-target="#navbar-scrollspy">
+<body data-spy="scroll" data-target=".navbar" data-offset="60">
 
   <!-- Navbar -->
-  <nav class="navbar fixed-top navbar-expand-md navbar-dark" id="navbar-scrollspy">
+  <nav class="navbar fixed-top navbar-expand-md navbar-dark">
     <div class="container">
       <a class="navbar-brand" href="#"><span>
           <span class="brand-firstname">Michael</span>
@@ -40,7 +40,7 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link active" href="#hero-section">Home <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="#about-section">Over</a>
           <a class="nav-item nav-link" href="#skills-section">Skills</a>
           <a class="nav-item nav-link" href="#portfolio-section">Portfolio</a>
@@ -51,7 +51,7 @@
   </nav><!-- End Navbar -->
 
   <!-- Hero Section -->
-  <div class="container-fluid hero-section">
+  <div id="hero-section" class="container-fluid hero-section">
     <!-- Type Animation -->
     <div class="inner-text">
       <p class="typed-animation-1"></p>
@@ -62,7 +62,7 @@
   <!-- About Section -->
   <div id="about-section" class="container-fluid text-center bg-grey">
     <div class="row">
-      <div class="col-sm-4 scrollreveal">
+      <div class="col-sm-4 col-lg-4 scrollreveal">
         <span class="logo"></span>
         <img class="pasfoto" src="/img/pasfoto.jpg">
       </div>
@@ -131,7 +131,7 @@
     </div>
     <div class="row text-center">
       <div class="col-lg-4 col-sm-12 scrollreveal">
-        <h4>Finished Project</h4>
+        <h4>Recent Works</h4>
         <div class="card">
           <a href="https://michaelhoner.github.io/rooster/"><img src="/img/rooster_poedercoat.png"
               alt="Rooster Poedercoat" class="img-thumbnail my-md-2" width="300" height="200"></a>
@@ -143,7 +143,7 @@
 
       <!-- <div class="row text-center"> -->
       <div class="col-lg-4 col-sm-12 scrollreveal">
-        <h4>Demo Project</h4>
+        <h4>Current Project</h4>
         <div class="card">
           <a href="https://michaelhoner.github.io/evelien/"><img src="/img/english_olp.png"
               alt="English Online Learning Platform" class="img-thumbnail my-md-2" width="300" height="200"></a>

@@ -32,7 +32,10 @@ html, body {
   }
   
   .hero-section {
+    /*filter: blur(8px);
+  -webkit-filter: blur(8px);*/
     background: url(../img/foto3.jpg) no-repeat center;
+    background-attachment: fixed;
     /*position: absolute;*/
     top: 0;
     left: 0;
@@ -41,7 +44,7 @@ html, body {
     height: 100%;
     background-size: cover;
     /*background-position: center top;*/
-    mix-blend-mode: multiply;
+    /*mix-blend-mode: multiply;*/
   }  
 
   /*Navbar*/
@@ -83,6 +86,10 @@ html, body {
       color: rgba(255,255,255);
     }
     .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+      color: #000;
+      background-color: #fff;
+    }
+    .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
       color: #000;
       background-color: #fff;
     }
@@ -174,87 +181,87 @@ p {
     }
   }*/
   
-  /*Text Animation*/
-  .inner-text {
-    position: relative;
-    text-align: center;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 50px;    
-    /*@media only screen and (min-width: 320px) {
+    /*Text Animation*/
+    .inner-text {
+      position: relative;
+      text-align: center;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 50px;    
+      /*@media only screen and (min-width: 320px) {
+        padding-left: 15px;
+        padding-right: 15px; 
+      }
+      @media only screen and (min-width: 400px) {
+        padding-left: 40px;
+        padding-right: 40px; 
+      }
+      @media only screen and (min-width: 680px) {
+        font-size: 75px;
+      }
+      @media only screen and (min-width: 950px) {
+        font-size: 100px;
+      }*/
+    }
+    /*@media (min-width: 320px) {
+      .inner-text {
       padding-left: 15px;
-      padding-right: 15px; 
+      padding-right: 15px;
+      }
     }
-    @media only screen and (min-width: 400px) {
-      padding-left: 40px;
-      padding-right: 40px; 
-    }
-    @media only screen and (min-width: 680px) {
-      font-size: 75px;
-    }
-    @media only screen and (min-width: 950px) {
-      font-size: 100px;
+    @media (min-width: 400px) {
+      .inner-text {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
     }*/
-  }
-  /*@media (min-width: 320px) {
-    .inner-text {
-    padding-left: 15px;
-    padding-right: 15px;
+    @media (min-width: 576px) {
+      .inner-text {
+      font-size: 75px;
+      }
     }
-  }
-  @media (min-width: 400px) {
-    .inner-text {
-      padding-left: 40px;
-      padding-right: 40px;
+    @media (min-width: 992px) {
+      .inner-text {
+      font-size: 100px;
+      }
     }
-  }*/
-  @media (min-width: 576px) {
-    .inner-text {
-    font-size: 75px;
+    
+    .typed-animation-1 {
+      display: inline-block;
+      font-size: 1em;
+      font-weight: 900;
+      margin: 0;
+      line-height: 1;
+      color: #f5f5f5;
+      /*@media only screen and (max-width: 465px) {
+        display: block;
+        position: absolute;
+        top: -25%;
+        left: 50%;
+        transform: translateX(-50%);
+      }*/
     }
-  }
-  @media (min-width: 992px) {
-    .inner-text {
-    font-size: 100px;
-    }
-  }
-  
-  .typed-animation-1 {
-    display: inline-block;
-    font-size: 1em;
-    font-weight: 900;
-    margin: 0;
-    line-height: 1;
-    color: #f5f5f5;
-    /*@media only screen and (max-width: 465px) {
+    /*Extra small devices (portrait phones, less than 576px)*/
+    @media (max-width: 575.98px) {
+      .typed-animation-1 {
       display: block;
       position: absolute;
       top: -25%;
       left: 50%;
       transform: translateX(-50%);
-    }*/
-  }
-  /*Extra small devices (portrait phones, less than 576px)*/
-  @media (max-width: 575.98px) {
-    .typed-animation-1 {
-    display: block;
-    position: absolute;
-    top: -25%;
-    left: 50%;
-    transform: translateX(-50%);
-    line-height: 0;
+      line-height: 0;
+      }
     }
-  }
-  
-  .typed-animation-2 {
-    display: inline-block;
-    font-size: 1em;
-    font-weight: 100;
-    margin: 0;
-    line-height: 1;
-    color: #4FC3F7;
-    /*@media only screen and (max-width: 465px) {
-      position: relative;
-      top: 0.6em;
-    }*/
+    
+    .typed-animation-2 {
+      display: inline-block;
+      font-size: 1em;
+      font-weight: 100;
+      margin: 0;
+      line-height: 1;
+      color: #4FC3F7;
+      /*@media only screen and (max-width: 465px) {
+        position: relative;
+        top: 0.6em;
+      }*/
   }
